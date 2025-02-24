@@ -1,6 +1,27 @@
 'use strict';
 
+// Avatar switching functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const avatarImg = document.querySelector('.avatar-box img');
+  const helloGifPath = './assets/images/hello.gif';
+  const profilePhotoPath = './assets/images/avatar.png';
 
+  // Start with the hello GIF
+  avatarImg.src = helloGifPath;
+
+  // Create a new image object to detect when the GIF has finished playing
+  const tempImg = new Image();
+  tempImg.src = helloGifPath;
+
+  tempImg.onload = function() {
+    // Get the GIF duration using the number of frames and frame delay
+    // This is a workaround since we can't directly get GIF duration
+    setTimeout(() => {
+      // Switch to profile photo after GIF plays once
+      avatarImg.src = profilePhotoPath;
+    }, 3000); // Adjust this timeout value to match your GIF duration
+  };
+});
 
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
