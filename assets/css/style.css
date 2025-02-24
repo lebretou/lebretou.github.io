@@ -2184,11 +2184,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 /* Light Mode Colors */
 [data-theme="light"] {
   --bg-gradient-onyx: hsl(0, 0%, 100%);
-  --bg-gradient-jet: hsl(0, 0%, 96%);
+  --bg-gradient-jet: hsl(0, 0%, 98%);  /* Lighter background */
   --smoky-black: hsl(0, 0%, 100%);
-  --eerie-black-1: hsl(0, 0%, 96%);
-  --eerie-black-2: hsl(0, 0%, 93%);
-  --jet: hsl(0, 0%, 80%);
+  --eerie-black-1: hsl(0, 0%, 98%);    /* Lighter background */
+  --eerie-black-2: hsl(0, 0%, 96%);    /* Lighter background */
+  --jet: hsl(0, 0%, 92%);              /* Much lighter border color */
   --white-1: hsl(0, 0%, 13%);
   --white-2: hsl(0, 0%, 13%);
   --light-gray: hsl(0, 0%, 20%);
@@ -2198,85 +2198,74 @@ textarea.form-input::-webkit-resizer { display: none; }
   --orange-yellow-crayola: hsl(45, 100%, 35%);
   --border-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(0, 0%, 80%) 0%, 
-    hsla(0, 0%, 80%, 0) 50%
+    hsl(0, 0%, 92%) 0%, 
+    hsla(0, 0%, 92%, 0) 50%
   );
   
-  /* Lighter shadow values for light mode */
-  --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.05);
-  --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.05);
-  --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.05);
-  --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.05);
-  --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.05);
+  /* Even lighter shadow values for light mode */
+  --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.03);
+  --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.03);
+  --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.03);
+  --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.03);
+  --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.03);
 }
 
 [data-theme="light"] .sidebar,
 [data-theme="light"] article {
+  background: var(--bg-gradient-onyx);
   border: 1px solid var(--jet);
   box-shadow: var(--shadow-1);
 }
 
-[data-theme="light"] .icon-box {
-  background: var(--bg-gradient-jet);
+[data-theme="light"] .service-item {
+  background: var(--bg-gradient-onyx);
 }
 
-[data-theme="light"] .icon-box::before {
-  background: var(--bg-gradient-jet);
+[data-theme="light"] .service-item::before {
+  background: var(--bg-gradient-onyx);
 }
 
-[data-theme="light"] .service-item::before,
+[data-theme="light"] .project-item,
+[data-theme="light"] .timeline-item,
+[data-theme="light"] .content-card {
+  background: var(--bg-gradient-onyx);
+}
+
+[data-theme="light"] .project-item::before,
+[data-theme="light"] .timeline-item::before,
 [data-theme="light"] .content-card::before {
   background: var(--bg-gradient-onyx);
+}
+
+[data-theme="light"] .info-content {
+  background: var(--bg-gradient-onyx);
+}
+
+[data-theme="light"] .info-content .title {
+  background: var(--bg-gradient-onyx);
+  background-color: rgba(231, 226, 226, 0.602);
+  color: var(--light-gray);
+}
+
+[data-theme="light"] .timeline-item:not(:last-child)::before {
+  background: var(--jet);
+}
+
+[data-theme="light"] .timeline-item::after {
+  box-shadow: 0 0 0 4px var(--jet);
+}
+
+[data-theme="light"] .navbar {
+  border-color: var(--jet);
+  background: hsla(0, 0%, 100%, 0.9);
+  backdrop-filter: blur(10px);
 }
 
 [data-theme="light"] .form-input,
 [data-theme="light"] .form-btn,
 [data-theme="light"] .filter-select,
 [data-theme="light"] .select-list {
-  background: var(--bg-gradient-jet);
   border-color: var(--jet);
-}
-
-[data-theme="light"] .navbar {
-  background: hsla(0, 0%, 100%, 0.9);
-}
-
-[data-theme="light"] .custom-link {
-  color: hsl(45, 100%, 35%);
-}
-
-[data-theme="light"] .info-content {
-  background: #EDEDED;
-}
-
-[data-theme="light"] .info-content .title {
-  background: #FFFFFF;
-  color: var(--light-gray);
-}
-
-[data-theme="light"] .service-item {
-  background: hsl(0, 0%, 96%);
-}
-
-[data-theme="light"] .service-item::before {
-  background: hsl(0, 0%, 96%);
-}
-
-[data-theme="light"] .service-content-box {
-  color: var(--light-gray);
-}
-
-[data-theme="light"] .content-card {
-  background: var(--border-gradient-onyx);
-}
-
-[data-theme="light"] .content-card::before {
-  background: var(--bg-gradient-onyx);
-}
-
-[data-theme="light"] .project-venue {
-  background: var(--eerie-black-2);
-  color: var(--orange-yellow-crayola);
 }
 
 @media (min-width: 1250px) {
