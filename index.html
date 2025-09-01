@@ -1,505 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zhongzheng Xu</title>
-
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/school-outline.svg" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhongzheng Xu | Interaction Design Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-
 <body>
-
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/avatar.png" alt="Zhongzheng Xu" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Zhongzheng Xu">Zhongzheng Xu</h1>
-
-          <p class="title">CS Master's Student @ Brown</p>
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="nav-logo">ZX</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Hi, I'm Zhongzheng Xu 👋</h1>
+                    <p class="typewriter">I love <span class="typewriter-text"></span></p>
+                    
+                    <p>I am currently a <b>first-year Ph.D. student</b> at <a href="https://www.umd.edu/" class="custom-link">University of Maryland, College Park</a> under the 
+                        guidance of <a href="https://www.fmyang.com//" class="custom-link"></a>Dr. Fumeng Yang</a>.</p>
+                    
+                    <p>
+                        Before I joined UMD, I received my Master's degree in Computer Science at <a href="https://www.brown.edu/" class="custom-link">Brown University</a>. 
+                    </p>
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
+                    <p>
+                        At Brown, I worked under <a href="https://jeffhuang.com/" class="custom-link">Dr. Jeff Huang</a> at <a href="https://hci.cs.brown.edu/" class="custom-link">Brown HCI Lab</a>. We are exploring the effect of visualizations on people's self-reflection over their personal text data.
+                    </p>
+                    
+                    <p>
+                        To pronounce my name, think of it like "John Jane Shoe". In my free time, I like being a barista and photographer. 
+                    </p>
+                    
+                    <a href="#contact" class="cta-button">Get in Touch</a>
+                </div>
+                <div class="hero-image">
+                    <!-- Placeholder for an image -->
+                    <img src="images/hello.png" alt="Placeholder profile image">
+                </div>
             </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:zxu169@brown.edu" class="contact-link">zxu169@brown.edu</a>
-            </div>
-
-          </li>
-
-
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Providence, Rhode Island</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://scholar.google.com/citations?user=zYYPxxsAAAAJ&hl=en" class="social-link">
-              <ion-icon name="school"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/zhongzheng-xu-072800" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Background</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Publications</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I am a second-year computer science <b>master's student</b> at <a href="https://www.brown.edu/" class="custom-link">Brown University</a>. 
-          </p>
-
-          <p>
-            Currently, I am working under <a href="https://jeffhuang.com/" class="custom-link">Dr. Jeff Huang</a> at <a href="https://hci.cs.brown.edu/" class="custom-link">Brown HCI Lab</a>. We are exploring the effect of visualizations on people's self-reflection over their personal text data.
-            In my senior year at <a href="https://www.emory.edu/home/index.html" class="custom-link">Emory University</a>,
-            I worked with <a href="https://emilywall.github.io/" class="custom-link">Dr. Emily Wall</a>, who leads Emory <a href="https://cav-lab.github.io/" class="custom-link">CAV Lab</a>. My research interests are <b>data visualization</b>, <b>human-computer interaction</b>, as well as how we might incorporate <b>LLM</b> into data visualization pipelines. 
-          </p>
-          <p>
-            To pronounce my name, think of it like "John Jane Shoe". In my free time, I like being a barista and photographer. 
-          </p>
         </section>
 
+        <section id="publications" class="publications-section">
+            <div class="container">
+                <h2>Publications</h2>
+                <div class="publications-list">
+                    <!-- Publication 1 -->
+                    <article class="publication-item">
+                        <div class="publication-cover">
+                            <img src="images/paper_cover_1.png" alt="Exploring the Capability of LLMs Paper Cover">
+                        </div>
+                        <div class="publication-content">
+                            <h3>Exploring the Capability of LLMs in Performing Low-Level Visual Analytic Tasks on SVG Data Visualizations</h3>
+                            <div class="publication-meta">
+                                <p class="publication-authors">
+                                    <span class="author-name highlighted">Zhongzheng Xu</span>, Emily Wall
+                                </p>
+                                <p class="publication-venue">
+                                    <span class="venue-name">2024 IEEE Visualization and Visual Analytics (VIS)</span>
+                                    <span class="publication-date">April 29, 2024</span>
+                                </p>
+                                <p class="publication-pages">Pages: 126-130</p>
+                            </div>
+                            <p class="publication-description">
+                                Data visualizations help extract insights from datasets, but reaching these insights requires decomposing high level goals into low-level analytic tasks that can be complex due to varying degrees of data literacy and visualization experience. This research explores how large language models can perform visual analytic tasks directly on SVG-based visualizations.
+                            </p>
+                            <div class="publication-links">
+                                <a href="https://arxiv.org/pdf/2404.19097" class="publication-link"><i class="fas fa-file-pdf"></i> PDF</a>
+                                <a href="https://ieeexplore.ieee.org/abstract/document/10771094" class="publication-link"><i class="fas fa-external-link-alt"></i> Publisher</a>
+                            </div>
+                        </div>
+                    </article>
 
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Masters Program</h4>
-
-                <p class="service-item-text">
-                  Second-year CS student @ Brown.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-people.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Seeking Connections</h4>
-
-                <p class="service-item-text">
-                  I am actively seeking to establish connections with people in the field of data visualization!
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-quote.svg" alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Applying to Ph.D.</h4>
-
-                <p class="service-item-text">
-                  I am applying to Ph.D. programs in the field of HCI and data visualization.
-                </p>
-              </div>
-            </li>
-
-          </ul>
-
+                    <!-- Publication 2 -->
+                    <article class="publication-item">
+                        <div class="publication-cover">
+                            <img src="images/paper_cover_0.png" alt="Let's Get Vysical Paper Cover">
+                        </div>
+                        <div class="publication-content">
+                            <h3>Let's Get Vysical: Perceptual Accuracy in Visual & Tactile Encodings</h3>
+                            <div class="publication-meta">
+                                <p class="publication-authors">
+                                    <span class="author-name highlighted">Zhongzheng Xu</span>, Kristin Williams, Emily Wall
+                                </p>
+                                <p class="publication-venue">
+                                    <span class="venue-name">2023 IEEE Visualization and Visual Analytics (VIS)</span>
+                                    <span class="publication-date">October 21, 2023</span>
+                                </p>
+                                <p class="publication-pages">Pages: 16-20</p>
+                            </div>
+                            <p class="publication-description">
+                                This research explores the effectiveness of tactile data encodings using swell paper compared to visual encodings displayed with SVGs for data perception tasks. The study establishes a novel tactile encoding hierarchy and provides empirical evidence for the perceptual accuracy of tactile encodings.
+                            </p>
+                            <div class="publication-links">
+                                <a href="https://arxiv.org/pdf/2308.04392" class="publication-link"><i class="fas fa-file-pdf"></i> PDF</a>
+                                <a href="https://ieeexplore.ieee.org/abstract/document/10360913" class="publication-link"><i class="fas fa-external-link-alt"></i> Publisher</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
-
-
-        <!--
-          - testimonials
-        -->
 
         
 
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-text">
+                        <h2>Get In Touch 🥳</h2>
+                        <p>Feel free to reach out if you'd like to collaborate or just say hello!</p>
+                        <div class="contact-links">
+                            <a href="mailto:zxu169@brown.edu" class="contact-link"><i class="fas fa-envelope"></i> Email</a>
+                            <a href="https://www.linkedin.com/in/zhongzheng-xu-072800/" target="_blank" rel="noopener noreferrer" class="contact-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                            <a href="./CV.pdf" target="_blank" class="contact-link"><i class="fas fa-file-alt"></i> CV</a>
+                            <a href="https://scholar.google.com/citations?user=zYYPxxsAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="contact-link"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+                        </div>
+                    </div>
+                    <div class="contact-image">
+                        <img src="images/get_in_touch.png" alt="Get in touch">
+                    </div>
+                </div>
             </div>
+        </section>
+    </main>
 
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Zhongzheng Xu. Built for CSCI 1300.</p>
         </div>
+    </footer>
 
-
-        <!--
-          - clients
-        -->
-
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="background" data-page="background">
-
-        <header>
-          <h2 class="h2 article-title">Background</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Brown University</h4>
-
-              <span>2023 — 2025</span>
-
-              <p class="timeline-text">
-                I am currently a second-year master's student at Brown University studying computer science. 
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Emory University</h4>
-
-              <span>2019 — 2023</span>
-
-              <p class="timeline-text">
-                At Emory, I studied computer science. In my senior year, I conducted research under the guidance of Dr. Emily Wall,
-                who leads the Emory Cognition and Visualization Lab. 
-                
-              </p>
-
-            <!-- </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Woodland Christian School</h4>
-
-              <span>2017 - 2019</span>
-
-              <p class="timeline-text">
-                Woodland is a small city near Sacramento, California. I graduated as a top 1% student. As an athelete, I played soccer and wrestling. 
-              </p>
-
-            </li> -->
-
-          </ol>
-
-        </section>
-
-
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="publications" data-page="publications">
-
-        <header>
-          <h2 class="h2 article-title">Publications</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Data Visualization</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>LLM</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Accessibility</button>
-            </li>
-
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Data Visualization</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>LLM</button>
-              </li>
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item active" data-filter-item data-category="Data Visualization, Accessibility">
-              <a href="https://ieeexplore.ieee.org/abstract/document/10360913">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/vysical.png" alt="finance" loading="lazy">
-                </figure>
-                <h3 class="project-title">Let's Get Vysical: Perceptual Accuracy in Visual & Tactile Encodings</h3>
-                <p class="project-category">Data Visualization, Accessibility</p>
-                <p class="project-venue">IEEE VIS 2023 Short Paper</p>
-              </a>
-            </li>
-            <li class="project-item active" data-filter-item data-category="Data Visualization, LLM">
-              <a href="https://ieeexplore.ieee.org/document/10771094">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/LLMSVG.png" alt="project" loading="lazy">
-                </figure>
-                <h3 class="project-title">Exploring the Capability of LLMs in Performing Low-Level Visual Analytic Tasks on SVG Data Visualizations</h3>
-                <p class="project-category">Data Visualization, LLM</p>
-                <p class="project-venue">IEEE VIS 2024 Short Paper</p>
-              </a>
-            </li>
-
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-    </div>
-
-  </main>
-
-  <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-    <ion-icon name="sunny-outline"></ion-icon>
-  </button>
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    <script src="script.js"></script>
 </body>
-
 </html>
