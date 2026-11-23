@@ -3,170 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zhongzheng Xu | Interaction Design Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Zhongzheng Xu</title>
+    <meta name="description" content="Zhongzheng Xu is a Ph.D. student at the University of Maryland, College Park, working on visualization and human-computer interaction.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="navbar">
-        <div class="container nav-container">
-            <a href="#home" class="nav-logo">ZX</a>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#publications">Publications</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <div class="page">
+        <aside class="profile">
+            <img class="portrait" src="images/profile.jpg" alt="Portrait of Zhongzheng Xu" width="440" height="440">
+            <h1>Zhongzheng Xu</h1>
+            <p class="role">Ph.D. student, University of Maryland, College Park</p>
 
-    <main>
-        <section id="home" class="hero-section">
-            <div class="container hero-content">
-                <div class="hero-text">
-                    <h1>Hi, I'm Zhongzheng Xu 👋</h1>
-                    <p class="typewriter">I love <span class="typewriter-text"></span></p>
-                    
-                    <p>I am currently a <b>second-year Ph.D. student</b> at <a href="https://www.umd.edu/" class="custom-link">University of Maryland, College Park</a> under the
-                        guidance of <a href="https://www.fmyang.com//" class="custom-link"></a>Dr. Fumeng Yang</a>.</p>
-                    
-                    <p>
-                        Before I joined UMD, I received my Master's degree in Computer Science at <a href="https://www.brown.edu/" class="custom-link">Brown University</a>. 
-                    </p>
+            <ul class="profile-links">
+                <li><a href="mailto:zxu169@brown.edu">zxu169@brown.edu</a></li>
+                <li><a href="./CV.pdf">CV</a></li>
+                <li><a href="https://scholar.google.com/citations?user=K9LVmUkAAAAJ&amp;hl=en">Google Scholar</a></li>
+                <li><a href="https://www.linkedin.com/in/zhongzheng-xu-072800/">LinkedIn</a></li>
+            </ul>
+        </aside>
 
-                    <p>
-                        At Brown, I worked under <a href="https://jeffhuang.com/" class="custom-link">Dr. Jeff Huang</a> at <a href="https://hci.cs.brown.edu/" class="custom-link">Brown HCI Lab</a>. We are exploring the effect of visualizations on people's self-reflection over their personal text data.
-                    </p>
-                    
-                    <p>
-                        I also worked with <a href="https://emilywall.github.io/" class="custom-link">Dr. Emily Wall</a> at <a href="https://www.emory.edu/" class="custom-link">Emory University</a>, where we studied visual and tactile perception and explored how large language models perform visual analytic tasks.
-                    </p>
+        <main>
+            <section id="about" class="about" aria-label="About">
+                <p class="lede">I work on visualization and human-computer interaction: designing interfaces, building visualization systems, and exploring novel interactions.</p>
 
-                    <p>
-                        To pronounce my name, think of it like "John Jane Shoe". In my free time, I like being a barista and photographer. 
-                    </p>
-                    
-                    <a href="#contact" class="cta-button">Get in Touch</a>
-                </div>
-                <div class="hero-image">
-                    <!-- Placeholder for an image -->
-                    <img src="images/hello.png" alt="Placeholder profile image">
-                </div>
-            </div>
-        </section>
+                <p>I am a second-year Ph.D. student at the <a href="https://www.umd.edu/">University of Maryland, College Park</a>, advised by <a href="https://www.fmyang.com/">Dr. Fumeng Yang</a>.</p>
 
-        <section id="publications" class="publications-section" aria-labelledby="publications-heading">
-            <div class="container">
-                <div class="publications-header">
+                <p>Before UMD, I earned a master's degree in computer science at <a href="https://www.brown.edu/">Brown University</a>. There I worked with <a href="https://jeffhuang.com/">Dr. Jeff Huang</a> in the <a href="https://hci.cs.brown.edu/">Brown HCI Lab</a>, studying how visualizations affect people's reflection on their personal text data. I also worked with <a href="https://emilywall.github.io/">Dr. Emily Wall</a> at <a href="https://www.emory.edu/">Emory University</a> on visual and tactile perception and on how large language models perform visual analytic tasks.</p>
+
+                <p class="aside">My name sounds roughly like &ldquo;John Jane Shoe.&rdquo; In my free time I like being a barista and a photographer.</p>
+            </section>
+
+            <section id="publications" class="publications" aria-labelledby="publications-heading">
+                <div class="section-head">
                     <h2 id="publications-heading">Publications</h2>
-                    <a href="https://scholar.google.com/citations?user=K9LVmUkAAAAJ&amp;hl=en" class="scholar-link">Google Scholar <span aria-hidden="true">↗</span></a>
+                    <a class="meta-link" href="https://scholar.google.com/citations?user=K9LVmUkAAAAJ&amp;hl=en">Google Scholar</a>
                 </div>
-                <div class="publication-year-group">
-                    <h3 class="publication-year" id="publications-2026">2026</h3>
-                    <ol class="publications-list" aria-labelledby="publications-2026">
+
+                <div class="year-group">
+                    <h3 class="year" id="publications-2026">2026</h3>
+                    <ol class="pub-list" aria-labelledby="publications-2026">
                         <li>
-                            <article class="publication-item">
-                                <h4>&quot;Code Is Cheap. Show Me the Talk.&quot;: Lessons from Teaching and Managing AI Coding Tool Usage in a Visualization Course</h4>
-                                <p class="publication-authors"><strong class="author-name">Zhongzheng Xu</strong>, Taehyun Yang, Fumeng Yang</p>
-                                <p class="publication-venue">IEEE VIS 2026 · Educator Report</p>
-                                <div class="publication-links" aria-label="Links for &quot;Code Is Cheap. Show Me the Talk.&quot;: Lessons from Teaching and Managing AI Coding Tool Usage in a Visualization Course">
-                                    <a href="https://arxiv.org/pdf/2607.09938" class="publication-link">PDF</a>
-                                    <a href="https://arxiv.org/abs/2607.09938" class="publication-link">arXiv</a>
-                                </div>
+                            <article class="pub">
+                                <h4>&ldquo;Code Is Cheap. Show Me the Talk.&rdquo;: Lessons from Teaching and Managing AI Coding Tool Usage in a Visualization Course</h4>
+                                <p class="authors"><strong>Zhongzheng Xu</strong>, Taehyun Yang, Fumeng Yang</p>
+                                <p class="venue">IEEE VIS 2026, Educator Report</p>
+                                <p class="pub-links">
+                                    <a href="https://arxiv.org/pdf/2607.09938">PDF</a>
+                                    <a href="https://arxiv.org/abs/2607.09938">arXiv</a>
+                                </p>
                             </article>
                         </li>
                         <li>
-                            <article class="publication-item">
+                            <article class="pub">
                                 <h4>Trace-Aware Workflows for Co-Creating Branded Content with Generative AI</h4>
-                                <p class="publication-authors">Taehyun Yang, Eunhye Kim, <strong class="author-name">Zhongzheng Xu</strong>, Fumeng Yang</p>
-                                <p class="publication-venue">CHI 2026 Workshop · Position paper</p>
-                                <div class="publication-links" aria-label="Links for Trace-Aware Workflows for Co-Creating Branded Content with Generative AI">
-                                    <a href="https://arxiv.org/pdf/2604.09583" class="publication-link">PDF</a>
-                                    <a href="https://arxiv.org/abs/2604.09583" class="publication-link">arXiv</a>
-                                </div>
+                                <p class="authors">Taehyun Yang, Eunhye Kim, <strong>Zhongzheng Xu</strong>, Fumeng Yang</p>
+                                <p class="venue">CHI 2026 Workshop, Position paper</p>
+                                <p class="pub-links">
+                                    <a href="https://arxiv.org/pdf/2604.09583">PDF</a>
+                                    <a href="https://arxiv.org/abs/2604.09583">arXiv</a>
+                                </p>
                             </article>
                         </li>
                         <li>
-                            <article class="publication-item">
+                            <article class="pub">
                                 <h4>In the Shadow of Judgment: Mapping Out the Landscape of Human-AI Decision-Making Through a Systematic Review</h4>
-                                <p class="publication-authors">Yixin Bai, Taehyun Yang, <strong class="author-name">Zhongzheng Xu</strong>, Dayeon Ki, Ziyi Wang, Yu Hou, Fumeng Yang</p>
-                                <p class="publication-venue">Preprint · 2026</p>
-                                <div class="publication-links" aria-label="Links for In the Shadow of Judgment: Mapping Out the Landscape of Human-AI Decision-Making Through a Systematic Review">
-                                    <a href="https://doi.org/10.36227/techrxiv.176963824.45099699/v1" class="publication-link">Manuscript</a>
-                                    <a href="https://fig-x.github.io/haid/" class="publication-link">Project</a>
-                                </div>
+                                <p class="authors">Yixin Bai, Taehyun Yang, <strong>Zhongzheng Xu</strong>, Dayeon Ki, Ziyi Wang, Yu Hou, Fumeng Yang</p>
+                                <p class="venue">Preprint, 2026</p>
+                                <p class="pub-links">
+                                    <a href="https://doi.org/10.36227/techrxiv.176963824.45099699/v1">Manuscript</a>
+                                    <a href="https://fig-x.github.io/haid/">Project</a>
+                                </p>
                             </article>
                         </li>
                     </ol>
                 </div>
-                <div class="publication-year-group">
-                    <h3 class="publication-year" id="publications-2024">2024</h3>
-                    <ol class="publications-list" aria-labelledby="publications-2024">
+
+                <div class="year-group">
+                    <h3 class="year" id="publications-2024">2024</h3>
+                    <ol class="pub-list" aria-labelledby="publications-2024">
                         <li>
-                            <article class="publication-item">
+                            <article class="pub">
                                 <h4>Exploring the Capability of LLMs in Performing Low-Level Visual Analytic Tasks on SVG Data Visualizations</h4>
-                                <p class="publication-authors"><strong class="author-name">Zhongzheng Xu</strong>, Emily Wall</p>
-                                <p class="publication-venue">IEEE Visualization and Visual Analytics (VIS) · 2024 · pp. 126–130</p>
-                                <div class="publication-links" aria-label="Links for Exploring the Capability of LLMs in Performing Low-Level Visual Analytic Tasks on SVG Data Visualizations">
-                                    <a href="https://arxiv.org/pdf/2404.19097" class="publication-link">PDF</a>
-                                    <a href="https://ieeexplore.ieee.org/abstract/document/10771094" class="publication-link">Publisher</a>
-                                </div>
+                                <p class="authors"><strong>Zhongzheng Xu</strong>, Emily Wall</p>
+                                <p class="venue">IEEE Visualization and Visual Analytics (VIS) 2024, pp. 126&ndash;130</p>
+                                <p class="pub-links">
+                                    <a href="https://arxiv.org/pdf/2404.19097">PDF</a>
+                                    <a href="https://ieeexplore.ieee.org/abstract/document/10771094">Publisher</a>
+                                </p>
                             </article>
                         </li>
                     </ol>
                 </div>
-                <div class="publication-year-group">
-                    <h3 class="publication-year" id="publications-2023">2023</h3>
-                    <ol class="publications-list" aria-labelledby="publications-2023">
+
+                <div class="year-group">
+                    <h3 class="year" id="publications-2023">2023</h3>
+                    <ol class="pub-list" aria-labelledby="publications-2023">
                         <li>
-                            <article class="publication-item">
-                                <h4>Let&#x27;s Get Vysical: Perceptual Accuracy in Visual &amp; Tactile Encodings</h4>
-                                <p class="publication-authors"><strong class="author-name">Zhongzheng Xu</strong>, Kristin Williams, Emily Wall</p>
-                                <p class="publication-venue">IEEE Visualization and Visual Analytics (VIS) · 2023 · pp. 16–20</p>
-                                <div class="publication-links" aria-label="Links for Let&#x27;s Get Vysical: Perceptual Accuracy in Visual &amp; Tactile Encodings">
-                                    <a href="https://arxiv.org/pdf/2308.04392" class="publication-link">PDF</a>
-                                    <a href="https://ieeexplore.ieee.org/abstract/document/10360913" class="publication-link">Publisher</a>
-                                </div>
+                            <article class="pub">
+                                <h4>Let&rsquo;s Get Vysical: Perceptual Accuracy in Visual &amp; Tactile Encodings</h4>
+                                <p class="authors"><strong>Zhongzheng Xu</strong>, Kristin Williams, Emily Wall</p>
+                                <p class="venue">IEEE Visualization and Visual Analytics (VIS) 2023, pp. 16&ndash;20</p>
+                                <p class="pub-links">
+                                    <a href="https://arxiv.org/pdf/2308.04392">PDF</a>
+                                    <a href="https://ieeexplore.ieee.org/abstract/document/10360913">Publisher</a>
+                                </p>
                             </article>
                         </li>
                     </ol>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        
-
-        <section id="contact" class="contact-section">
-            <div class="container">
-                <div class="contact-content">
-                    <div class="contact-text">
-                        <h2>Get In Touch 🥳</h2>
-                        <p>Feel free to reach out if you'd like to collaborate or just say hello!</p>
-                        <div class="contact-links">
-                            <a href="mailto:zxu169@brown.edu" class="contact-link"><i class="fas fa-envelope"></i> Email</a>
-                            <a href="https://www.linkedin.com/in/zhongzheng-xu-072800/" target="_blank" rel="noopener noreferrer" class="contact-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                            <a href="./CV.pdf" target="_blank" class="contact-link"><i class="fas fa-file-alt"></i> CV</a>
-                            <a href="https://scholar.google.com/citations?user=K9LVmUkAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" class="contact-link"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
-                        </div>
-                    </div>
-                    <div class="contact-image">
-                        <img src="images/get_in_touch.png" alt="Get in touch">
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Zhongzheng Xu. Built for CSCI 1300.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+            <footer class="footer">
+                <p>Happy to talk about research or collaborations. Email is the best way to reach me.</p>
+                <p class="copyright">&copy; 2026 Zhongzheng Xu</p>
+            </footer>
+        </main>
+    </div>
 </body>
 </html>
